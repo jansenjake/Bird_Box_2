@@ -7,6 +7,88 @@
     <title>Bird Box</title>
 </head>
 <body>
-    <h2>Bird Box</h1>
+    <h2>Route Description</h2>
+    <table>
+        <thead>
+            <th>Method</th>
+            <th>Path</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>/</td>
+                <td>Renders the home page (index.html)</td>
+              </tr>
+              <tr>
+              
+                <td>POST</td>
+                <td>/login</td>
+                <td>Allows users to log into their account .</td>
+              </tr>
+              <tr>
+            
+                <td>GET</td>
+                <td>/users</td>
+                <td>Returns an array of all users registered .</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/users/:id</td>
+                <td>Returns an object of the user with matching ID .</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/users/:id</td>
+                <td>Updates details of the user with the matching ID .</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/register</td>
+                <td>
+                  Encrypts password given by user, saves user  database, 
+                  and returns a JSON web token to the frontend.
+                </td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/users/:id</td>
+                <td>Removes user from the database .</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/products</td>
+                <td>Returns an array of all products .</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/products/:id</td>
+                <td>
+                  Returns an object of the selected product with matching ID .
+                </td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/products</td>
+                <td>Successfully saves product in relevant database .</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/products/:id</td>
+                <td>
+                  Updates product in relevant database successfully -- only users
+                  with admin roles can update products .
+                </td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/products/:id</td>
+                <td>
+                  Deletes product from relevant database successfully -- only users
+                  with admin roles can update products .
+                </td>
+              </tr>
+        </tbody>
+    </table>
 </body>
 </html>
